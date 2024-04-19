@@ -1,0 +1,35 @@
+{
+  "user": [
+    {
+      "id": "bccb",
+      "name": "test",
+      "firstname": "test",
+      "password": "test"
+    },
+    {
+      "id": "52a3",
+      "name": "test",
+      "firstname": "test",
+      "password": "test"
+    },
+    {
+      "id": "d5a3",
+      "name": "test",
+      "firstname": "test",
+      "password": "test"
+    },
+    {
+      "id": "4761",
+      "name": "test",
+      "firstname": "test",
+      "password": "test"
+    }
+  ],
+  "films": [
+    {
+      "id": 1,
+      "name": "John Wick",
+      "img": "img"
+    }
+  ]
+}
