@@ -8,19 +8,27 @@
               >Home</router-link
             >
           </li>
-          <li class="nav-item">
-            <router-link class="nav-link" to="/inscription"
-              >Inscription</router-link
-            >
-          </li>
-          <li class="nav-item">
-            <router-link class="nav-link" to="/sign-in">Connexion</router-link>
-          </li>
+
           <li class="nav-item">
             <router-link class="nav-link" to="/films"> Films</router-link>
           </li>
           <li class="nav-item">
             <router-link class="nav-link" to="/liste"> Liste</router-link>
+          </li>
+          <div v-if="!user" class="d-flex">
+            <li class="nav-item">
+              <router-link class="nav-link" to="/inscription"
+                >Inscription</router-link
+              >
+            </li>
+            <li class="nav-item">
+              <router-link class="nav-link" to="/sign-in"
+                >Connexion</router-link
+              >
+            </li>
+          </div>
+          <li v-else>
+            <button class="nav-link" @click="disconnected">Déconnexion</button>
           </li>
         </ul>
       </div>
@@ -28,6 +36,21 @@
   </nav>
 </template>
 
-<script></script>
+<script setup>
+import { computed } from "vue";
+import { useRouter } from "vue-router";
+
+const router = useRouter();
+
+const user = computed(() => {
+  const storedUser = localStorage.getItem("user");
+  return storedUser ? JSON.parse(storedUser) : null;
+});
+
+const disconnected = () => {
+  localStorage.clear();
+  return router.push("/");
+};
+</script>
 
 <style lang=""></style>

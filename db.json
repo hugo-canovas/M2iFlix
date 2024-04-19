@@ -23,13 +23,76 @@
       "name": "test",
       "firstname": "test",
       "password": "test"
+    },
+    {
+      "id": "95e6",
+      "name": "test",
+      "password": "test"
+    },
+    {
+      "id": "5a6f",
+      "name": "bibi",
+      "firstname": "bibi",
+      "password": "test"
     }
   ],
   "films": [
     {
-      "id": 1,
+      "id": "1",
       "name": "John Wick",
       "img": "img"
+    },
+    {
+      "id": "2",
+      "name": "Mission Cléopatre",
+      "img": "img"
+    },
+    {
+      "id": "3",
+      "name": "Fatal",
+      "img": "img"
+    },
+    {
+      "id": "4",
+      "name": "Les inconnus",
+      "img": "img"
+    },
+    {
+      "id": "5",
+      "name": "Achref le grand",
+      "img": "img"
+    }
+  ],
+  "user-list": [
+    {
+      "id": "ade9",
+      "user": "95e6",
+      "moovie": "John Wick"
+    },
+    {
+      "id": "01cd",
+      "user": "95e6",
+      "moovie": "Mission Cléopatre"
+    },
+    {
+      "id": "86d7",
+      "user": "95e6",
+      "moovie": "Mission Cléopatre"
+    },
+    {
+      "id": "30dd",
+      "user": "5a6f",
+      "moovie": "John Wick"
+    },
+    {
+      "id": "6baa",
+      "user": "5a6f",
+      "moovie": "Mission Cléopatre"
+    },
+    {
+      "id": "ee15",
+      "user": "5a6f",
+      "moovie": "Fatal"
     }
   ]
 }
